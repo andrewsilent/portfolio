@@ -135,8 +135,8 @@ body {
     transition: background-color 0.5s ease 0s;
 }
 
-.section-intro .language-list .link:active, 
-.section-intro .language-list .link:hover {
+.section-intro .language-list .link:hover,
+.section-intro .language-list .link.active {
     background-color: #348;
     color: #FFF;
 }
