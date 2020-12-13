@@ -121,6 +121,26 @@ body {
     font-weight: 700;
 }
 
+.section-intro .language-list {
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+}
+
+.section-intro .language-list .link {
+    color: #348;
+    background-color: transparent;
+    display: inline-block;
+    padding: 0.25rem 0.5rem;
+    transition: background-color 0.5s ease 0s;
+}
+
+.section-intro .language-list .link:active, 
+.section-intro .language-list .link:hover {
+    background-color: #348;
+    color: #FFF;
+}
+
 .section-intro .photo-wrap {
     height: 480px;
     overflow: hidden;
