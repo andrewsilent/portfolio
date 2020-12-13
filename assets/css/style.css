@@ -1,0 +1,307 @@
+@font-face {
+    font-family: "Play";
+    src: url("../fonts/Play/Play-Regular.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Play";
+    src: url("../fonts/Play/Play-Bold.ttf") format("truetype");
+    font-weight: 700;
+    font-style: normal;
+}
+
+body {
+    font: 400 1rem/1.25 'Play';
+    min-width: 360px;
+    background-color: #EEE;
+    color: #333;
+    overflow-x: hidden;
+}
+
+.wrapper {
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.title {
+    font: 700 3rem/1.25 'Play';
+    color: #348;
+}
+
+.second-title {
+    font: 400 2rem/1.25 'Play';
+    border-bottom: 1px solid #DDD;
+    padding-bottom: 0.75rem;
+    margin-bottom: 1rem;
+}
+
+.section-title {
+    font: 400 2rem/1.25 'Play';
+    margin-bottom: 2rem;
+}
+
+.subtitle {
+    font: 700 1.5rem/1.25 'Play';
+    margin: 1rem 0 0.5rem 0;
+}
+
+.section-intro {
+    padding-top: 6.25rem;
+}
+
+.section-intro::before {
+    display: inline-block;
+    content: '';
+    background-color: #348;
+    width: 100%;
+    height: 360px;
+    position: absolute;
+    z-index: 0;
+    top: 0;
+}
+
+.section-intro .intro {
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: #EEE;
+    position: relative;
+    z-index: 1;
+}
+
+.section-intro .state-list {
+    padding: 0 1.25rem;
+    flex-grow: 1;
+}
+
+.section-intro .state {
+    font: 400 1.15rem/1.25 'Play';
+    margin-bottom: 0.25rem;
+}
+
+.section-intro .personal-list {
+    margin: 1.5rem 0;
+}
+
+.section-intro .personal-list .item {
+    margin-bottom: 0.5rem;
+}
+
+.section-intro .param, .section-intro .value {
+    display: inline-block;
+    min-width: 180px;
+}
+
+.section-intro .param {
+    font-weight: 700;
+}
+
+.section-intro .photo-wrap {
+    height: 480px;
+    overflow: hidden;
+}
+
+.section-intro .photo {
+    height: inherit;
+}
+
+.section-skills {
+    background-color: #FFF;
+    padding: 3rem 0;
+}
+
+.section-skills .cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.section-skills .card {
+    min-width: 330px;
+    margin: 0 0.2rem 2rem 0.2rem;
+}
+
+.section-skills .item {
+    position: relative;
+    display: flex;
+    margin-top: 2.25rem;
+    height: 8px;
+    border-radius: 4px;
+    background-color: #CCC;
+    cursor: pointer;
+}
+
+.section-skills .param {
+    padding-left: 0.5rem;
+}
+
+.section-skills .item:hover::before {
+    content: attr(prompt);
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 0.5625rem 0.75rem;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    background-image: linear-gradient(90deg, rgba(51,85,170,1) 65%, rgba(51,85,170,0) 110%);
+    color: #EEE;
+    white-space: nowrap;
+    z-index: 10;
+}
+
+.section-skills .item::after {
+    display: block;
+    content: '';
+    height: 8px;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #35A;
+}
+
+.section-skills .html.item::after {
+    width: 90%;
+}
+
+.section-skills .css.item::after {
+    width: 90%;
+}
+
+.section-skills .js.item::after {
+    width: 25%;
+}
+
+.section-skills .react.item::after {
+    width: 10%;
+}
+
+.section-skills .php.item::after {
+    width: 10%;
+}
+
+.section-skills .ng.item::after {
+    width: 75%;
+}
+
+.section-skills .sl.item::after {
+    width: 75%;
+}
+
+.section-skills .jq.item::after {
+    width: 25%;
+}
+
+.section-skills .bs.item::after {
+    width: 25%;
+}
+
+.section-skills .dl.item::after {
+    width: 25%;
+}
+
+.section-skills .vsc.item::after {
+    width: 75%;
+}
+
+.section-skills .phs.item::after {
+    width: 75%;
+}
+
+.section-skills .lnx.item::after {
+    width: 50%;
+}
+
+.section-skills .git.item::after {
+    width: 50%;
+}
+
+.section-skills .gle.item::after {
+    width: 50%;
+}
+
+.section-skills .param {
+    flex-grow: 1;
+}
+
+.section-skills .param, .section-skills .value {
+    margin-top: -1.25rem;
+}
+
+.section-advantages {
+    background-color: #348;
+    color: #FFF;
+    padding: 3rem 0;
+}
+
+.section-advantages .container {
+    padding: 0 1.25rem;
+}
+
+.section-advantages .item {
+    margin-bottom: 0.5rem;
+}
+
+.section-advantages .item::before {
+    display: inline-block;
+    content: '';
+    height: 8px;
+    width: 8px;
+    background-color: #FFF;
+    border-radius: 4px;
+    position: relative;
+    top: -0.0625rem;
+    left: -0.1rem;
+}
+
+.section-projects {
+    padding: 3rem 0;
+}
+
+.section-projects .container {
+    padding: 0 1.25rem;
+}
+
+.section-projects .cards-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: stretch;
+}
+
+.section-projects .card {
+    max-width: 330px;
+    margin: 0 0.375rem 3rem 0.375rem;
+    padding: 0 0.625rem;
+}
+
+.section-projects .card-img {
+    max-width: 328px;
+    transition: transform 0.5s ease 0s;
+    margin-bottom: 1rem;
+    margin: 0 -0.625rem 1rem -0.625rem;
+}
+
+.section-projects .card-img:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.section-projects .card-link {
+    color: #35A;
+}
+
+.section-projects .card-descr {
+    font-size: 0.8rem;
+    margin: 1rem 0;
+}
